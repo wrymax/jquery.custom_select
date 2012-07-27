@@ -1,0 +1,61 @@
+<html>
+	<head>
+		<link href="jquery.custom_select.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+		<script type="text/javascript" src="jquery.custom_select.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				// simple default version
+				$('#example1').custom_select();
+				// pass width and height to config style
+				$('#example2').custom_select( { height : 30 } );
+
+
+				// console for example:
+				$('form input[type=submit]').click(function(){
+					var str = "";
+					$('select').each(function(){
+						str += $(this).attr('id') + " value: " + $(this).val() + '<br/>';
+					})
+					$('#information').html(str);
+				})
+			})
+		</script>
+		<style type="text/css">
+			fieldset {
+				display: inline-block;
+				margin: 10px 0;
+			}
+		</style>
+	</head>
+	<body>
+		<form action="#" method="get">
+			<fieldset>
+				<legend>Default Version</legend>
+				<select id="example1">
+					<option value="example_1">example_1</option>
+					<option value="example_2">example_2</option>
+					<option value="example_3">example_3</option>
+					<option value="example_4">example_4</option>
+					<option value="example_5">example_5</option>
+					<option value="example_6">example_6</option>
+				</select>
+			</fieldset>
+			<br/>
+			<fieldset>
+				<legend>Custom Version</legend>
+				<select id="example2">
+					<option value="example_1">example_1</option>
+					<option value="example_2">example_2</option>
+					<option value="example_3">example_3</option>
+					<option value="example_4">example_4</option>
+					<option value="example_5">example_5</option>
+					<option value="example_6">example_6</option>
+				</select>
+			</fieldset>
+			<br/>
+			<input type="submit" value="submit" />
+		</form>
+		<div id="information"></div>
+	</body>
+</html>

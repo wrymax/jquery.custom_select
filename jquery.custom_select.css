@@ -3,17 +3,17 @@
  * Email: wrymax@qq.com
  */
 .custom_select {
-	border: 1px solid #CCC;
-	background: white;
-	padding: 0;
-	cursor: pointer;
-	position: relative;
+  border: 1px solid #CCC;
+  background: white;
+  padding: 0;
+  cursor: pointer;
+  position: relative;
 }
 .custom_select.hovered {
   border: 1px solid #AAA;
 }
 .custom_select .option {
-	padding: 0 3px;
+  padding: 0 3px;
   background-color: white;
   color: #555;
   font-size: 13px;
@@ -22,12 +22,12 @@
   background: #EEE;
 }
 .custom_select .candidate_options {
-	display: none;
-	position: absolute;
-	top: 30px;
-	left: -1px;
-	background: white;
-	border: 1px solid #CCC;
+  display: none;
+  position: absolute;
+  top: 30px;
+  left: -1px;
+  background: white;
+  border: 1px solid #CCC;
   z-index: 10000;
 }
 .custom_select .main_option {
